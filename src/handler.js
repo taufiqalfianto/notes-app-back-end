@@ -20,7 +20,7 @@ const addNoteHandler = (request, h) => {
 
   if (isSucces) {
     const response = h.response({
-      status: 'succes',
+      status: 'success',
       message: 'catatan berhasil ditambahkan',
       data: {
         noteId: id,
@@ -32,7 +32,7 @@ const addNoteHandler = (request, h) => {
 };
 
 const getAllNotesHandler = () => ({
-  status: 'succes',
+  status: 'success',
   data: {
     notes,
   },
@@ -45,7 +45,7 @@ const getNoteByIdHandler = (request, h) => {
 
   if (note !== undefined) {
     return {
-      status: 'succes',
+      status: 'success',
       data: {
         note,
       },
